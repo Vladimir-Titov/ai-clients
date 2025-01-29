@@ -1,7 +1,14 @@
 [project]
 name = "ai-clients"
 version = "0.1.0"
-description = "Http clients for easy integration with different ai models"
+description = "HTTP clients for easy integration with different ai models"
 readme = "README.md"
+authors = [
+    { name = "vtitov", email = "v.v.titov94@gmail.com" }
+]
 requires-python = ">=3.12"
 dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
