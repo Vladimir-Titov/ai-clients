@@ -1,0 +1,7 @@
+[project]
+name = "ai-clients"
+version = "0.1.0"
+description = "Http clients for easy integration with different ai models"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
