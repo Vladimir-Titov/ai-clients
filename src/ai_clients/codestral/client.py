@@ -27,16 +27,19 @@ class Codestral(BaseAIClient[CompletionMessageRequest, CompletionResponse]):
             '/v1/chat/completions',
             headers=self.auth_headers,
             json=request.model_dump(mode='json', exclude_none=True),
+            **payload,
         )
         return CompletionResponse(**response).choices[0].message.content
 
     async def chat_completion_advanced(
         self, message: CompletionMessageRequest, model: str, **payload
     ) -> CompletionResponse:
+        b = None
         response = await self._request(
             'POST',
             '/v1/chat/completions',
             headers=self.auth_headers,
             json=message.model_dump(mode='json', exclude_none=True),
+            **payload,
         )
         return CompletionResponse(**response)
