@@ -7,6 +7,12 @@ authors = [
     { name = "vtitov", email = "v.v.titov94@gmail.com" }
 ]
 requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed"
+]
+
 dependencies = [
     "aiohttp>=3.11.12",
     "pydantic>=2.10.6",
