@@ -34,7 +34,6 @@ class Codestral(BaseAIClient[CompletionMessageRequest, CompletionResponse]):
     async def chat_completion_advanced(
         self, message: CompletionMessageRequest, model: str, **payload
     ) -> CompletionResponse:
-        b = None
         response = await self._request(
             'POST',
             '/v1/chat/completions',
