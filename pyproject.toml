@@ -7,8 +7,35 @@ authors = [
     { name = "vtitov", email = "v.v.titov94@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "aiohttp>=3.11.12",
+    "pydantic>=2.10.6",
+    "ujson>=5.10.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+ignore = ["F401"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[dependency-groups]
+dev = [
+    "aioresponses>=0.7.8",
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.3",
+]
