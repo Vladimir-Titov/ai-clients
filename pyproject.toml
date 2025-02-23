@@ -15,6 +15,11 @@ classifiers = [
     "Typing :: Typed"
 ]
 
+[project.urls]
+Repository = "https://github.com/Vladimir-Titov/ai-clients"
+Issues = "https://github.com/Vladimir-Titov/ai-clients/issues"
+
+
 dependencies = [
     "aiohttp>=3.11.12",
     "pydantic>=2.10.6",
