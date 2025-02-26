@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "vtitov", email = "v.v.titov94@gmail.com" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3.10",
@@ -15,16 +15,15 @@ classifiers = [
     "Typing :: Typed"
 ]
 
-[project.urls]
-Repository = "https://github.com/Vladimir-Titov/ai-clients"
-Issues = "https://github.com/Vladimir-Titov/ai-clients/issues"
-
-
 dependencies = [
     "aiohttp>=3.11.12",
     "pydantic>=2.10.6",
     "ujson>=5.10.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/Vladimir-Titov/ai-clients"
+Issues = "https://github.com/Vladimir-Titov/ai-clients/issues"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
