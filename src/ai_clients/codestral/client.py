@@ -1,6 +1,6 @@
 import aiohttp
 
-from src.ai_clients.base import BaseAIClient
+from ai_clients.base import BaseAIClient
 from .types import (
     CompletionMessageRequest,
     CompletionResponse,
